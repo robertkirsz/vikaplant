@@ -1,0 +1,19 @@
+{
+  "name": "vikaplant",
+  "version": "1.0.0",
+  "description": "vikaplant's homepage",
+  "private": true,
+  "author": "Robert Kirsz <robert.kirsz@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/robertkirsz/vikaplant.git"
+  },
+  "license": "UNLICENSED",
+  "homepage": "https://vikaplant.pl",
+  "scripts": {
+    "build": "gulp"
+  },
+  "devDependencies": {
+    "gulp": "4.0.2"
+  }
+}
