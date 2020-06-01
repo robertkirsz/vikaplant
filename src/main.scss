@@ -1,0 +1,239 @@
+@import url(http://fonts.googleapis.com/css?family=Oleo + Script);
+
+$zielony: #83b5b2;
+$zolty: #f7eace;
+$bezowy: #dcd5c2;
+$szary: #cecece;
+$czerwony: #d8805c;
+$czarny: #3b3b3b;
+
+$cien: 0px 3px 10px -3px rgba(black, 0.5);
+$paski: url(../img/pasek.png) repeat-x left 0 top 10px,
+  url(../img/pasek.png) repeat-x bottom 10px left 0px;
+
+@mixin border-top-bottom {
+  border-bottom: 1px solid rgba(black, 0.4);
+  border-top: 1px solid rgba(white, 0.4);
+}
+
+.wow {
+  visibility: hidden;
+}
+
+body {
+  padding-top: 50px;
+}
+
+.btn {
+  box-shadow: $cien;
+}
+
+.jumbotron {
+  color: $zolty;
+  background: $paski, #83b5b2 url(../img/noise.png);
+  @include border-top-bottom;
+  border-radius: none;
+  margin: 0;
+  h1 {
+    font-family: "Oleo Script", cursive;
+    padding: 0;
+    margin: 0;
+    text-shadow: 0px 2px 3px rgba(black, 0.75);
+  }
+}
+
+#vika-nawigacja {
+  background: $zielony url(../img/noise.png);
+  border: none;
+  box-shadow: $cien;
+  margin: 0;
+  .navbar-brand {
+    font-family: "Oleo Script", cursive;
+    font-size: 2.5em;
+    text-shadow: 0px 2px 3px rgba(black, 0.75);
+  }
+  a {
+    color: $zolty;
+    font-size: 1.2em;
+  }
+  .active > a {
+    background: darken($zielony, 10%) url(../img/noise.png);
+  }
+  .navbar-collapse {
+    border: none;
+    box-shadow: none;
+  }
+}
+
+#vika-nawigacja > div > div.navbar-header > button {
+  background-image: url(../img/noise.png);
+  background-color: darken($zielony, 10%);
+  border: none;
+  box-shadow: $cien;
+  transition: all 0.3s ease;
+  &:hover {
+    background-color: darken($zielony, 15%);
+  }
+  .icon-bar {
+    background: darken($zielony, 30%);
+  }
+}
+
+#vika-logo {
+  //height: auto;
+  //padding: 0 0 5px 5px;
+  //line-height: normal;
+  img {
+    display: none;
+    width: 38px;
+    margin: 0;
+    padding: 0;
+    // display: inline-block;
+    vertical-align: middle;
+  }
+}
+
+#vika-o-nas {
+  background: $paski, $bezowy url(../img/noise.png);
+  @include border-top-bottom;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+#vika-galeria {
+  background: $paski, $szary url(../img/noise.png);
+  @include border-top-bottom;
+  padding-top: 30px;
+  img {
+    margin-bottom: 30px;
+    position: relative;
+    z-index: 2;
+  }
+  .shadow {
+    position: relative;
+  }
+  .shadow:before,
+  .shadow:after {
+    position: absolute;
+    content: "";
+    bottom: 43px;
+    left: 7px;
+    width: 46%;
+    top: 70%;
+    max-width: 300px;
+    box-shadow: 0 15px 10px #777;
+    transform: rotate(-3deg);
+  }
+  .shadow:after {
+    transform: rotate(3deg);
+    right: 10px;
+    left: auto;
+  }
+}
+
+#slider {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  .item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 3s ease;
+    width: 100%;
+    &.active {
+      position: relative;
+      opacity: 1;
+    }
+    img {
+      width: 100%;
+    }
+    .caption {
+      position: absolute;
+      right: 0;
+      top: 0;
+      margin: 20px;
+      max-width: 300px;
+      padding: 20px;
+      color: #eee;
+      text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+  }
+}
+
+#vika-kontakt {
+  background: $paski, $bezowy url(../img/noise.png);
+  @include border-top-bottom;
+  padding-top: 30px;
+  border-top: 1px solid rgba(white, 0.5);
+  legend {
+    padding-bottom: 5px;
+    border: none;
+    background: url(../img/pasek.png) repeat-x 0 100%;
+  }
+  input,
+  .input-group-addon,
+  textarea {
+    border: 1px solid #888;
+  }
+  .input-group-addon {
+    border-right: none;
+    background: darken($zielony, 10%);
+    color: darken($zielony, 30%);
+  }
+  button {
+    background: darken($zielony, 10%) !important;
+    border: none !important;
+    transition: all 0.3s ease;
+    &:hover {
+      background: darken($zielony, 15%) !important;
+    }
+  }
+}
+
+#map-canvas {
+  height: 300px;
+}
+
+//Tylko małe ekrany
+@media screen and (max-width: 768px) {
+  #vika-galeria {
+    padding-top: 20px;
+    padding-bottom: 11px;
+    .portfolio-item {
+      padding-right: 5px;
+      padding-left: 5px;
+      img {
+        margin-bottom: 10px;
+      }
+    }
+  }
+  #vika-kontakt {
+    address {
+      text-align: center;
+    }
+  }
+}
+
+//Tylko ekrany większe niż małe
+@media screen and (min-width: 768px) {
+  body {
+    padding-top: 70px; //Suma trzech wartości poniżej
+  }
+  #vika-nawigacja {
+    .navbar-nav > li > a,
+    .navbar-brand {
+      line-height: 50px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+  }
+  .jumbotron {
+    padding: 30px 0;
+  }
+  #map-canvas {
+    height: 450px;
+  }
+}
