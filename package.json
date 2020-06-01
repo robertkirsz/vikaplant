@@ -11,9 +11,12 @@
   "license": "UNLICENSED",
   "homepage": "https://vikaplant.pl",
   "scripts": {
-    "build": "gulp"
+    "start": "gulp",
+    "build": "gulp build"
   },
   "devDependencies": {
-    "gulp": "4.0.2"
+    "browser-sync": "2.26.7",
+    "gulp": "4.0.2",
+    "gulp-sass": "4.1.0"
   }
 }

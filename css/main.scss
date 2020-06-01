@@ -1,5 +1,3 @@
-@import url(http://fonts.googleapis.com/css?family=Oleo + Script);
-
 $zielony: #83b5b2;
 $zolty: #f7eace;
 $bezowy: #dcd5c2;
@@ -35,7 +33,7 @@ body {
   border-radius: none;
   margin: 0;
   h1 {
-    font-family: "Oleo Script", cursive;
+    font-family: 'Oleo Script', cursive;
     padding: 0;
     margin: 0;
     text-shadow: 0px 2px 3px rgba(black, 0.75);
@@ -48,7 +46,7 @@ body {
   box-shadow: $cien;
   margin: 0;
   .navbar-brand {
-    font-family: "Oleo Script", cursive;
+    font-family: 'Oleo Script', cursive;
     font-size: 2.5em;
     text-shadow: 0px 2px 3px rgba(black, 0.75);
   }
@@ -115,7 +113,7 @@ body {
   .shadow:before,
   .shadow:after {
     position: absolute;
-    content: "";
+    content: '';
     bottom: 43px;
     left: 7px;
     width: 46%;
