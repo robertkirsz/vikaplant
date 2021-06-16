@@ -1,558 +1,548 @@
 <!DOCTYPE html>
 <html class="no-js" lang="pl">
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-24232014-7"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "UA-24232014-7");
+    </script>
 
-<head>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-24232014-7"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-    gtag('config', 'UA-24232014-7');
-  </script>
+    <title>vikaplant</title>
 
-  <title>vikaplant</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Szkółka bylin, rabaty bylinowe, wodospady, strumyki, kaskady, oczka wodne" />
+    <meta name="msapplication-TileColor" content="#83b5b2" />
+    <meta name="theme-color" content="#83b5b2" />
 
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Szkółka bylin, rabaty bylinowe, wodospady, strumyki, kaskady, oczka wodne" />
-  <meta name="msapplication-TileColor" content="#83b5b2" />
-  <meta name="theme-color" content="#83b5b2" />
+    <link href="https://fonts.googleapis.com/css2?family=Oleo+Script&display=swap" rel="stylesheet" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#83b5b2" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="fancybox/source/jquery.fancybox.css" />
+    <link rel="stylesheet" href="css/animate.css" />
+    <link rel="stylesheet" href="css/main.css" />
 
-  <link href="https://fonts.googleapis.com/css2?family=Oleo+Script&display=swap" rel="stylesheet" />
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-  <link rel="manifest" href="/site.webmanifest" />
-  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#83b5b2" />
-  <link rel="stylesheet" href="css/bootstrap.min.css" />
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
-  <link rel="stylesheet" href="fancybox/source/jquery.fancybox.css" />
-  <link rel="stylesheet" href="css/animate.css" />
-  <link rel="stylesheet" href="css/main.css" />
+    <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+  </head>
 
-  <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
-</head>
+  <body>
+    <div id="fb-root"></div>
 
-<body>
-  <div id="fb-root"></div>
+    <script>
+      (function (d, s, id) {
+        var js,
+          fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "//connect.facebook.net/pl_PL/sdk.js#xfbml=1&version=v2.4";
+        fjs.parentNode.insertBefore(js, fjs);
+      })(document, "script", "facebook-jssdk");
+    </script>
 
-  <script>
-    (function (d, s, id) {
-      var js,
-        fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) return;
-      js = d.createElement(s);
-      js.id = id;
-      js.src = "//connect.facebook.net/pl_PL/sdk.js#xfbml=1&version=v2.4";
-      fjs.parentNode.insertBefore(js, fjs);
-    })(document, "script", "facebook-jssdk");
-  </script>
-
-  <!-- NAWIGACJA -->
-  <nav id="vika-nawigacja" class="navbar navbar-default navbar-fixed-top">
-    <div class="container">
-      <!-- Brand and toggle get grouped for better mobile display -->
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#vika-navbar-collapse-1">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a id="vika-logo" class="navbar-brand" href="#vika-carousel">
-          <img src="img/logo.png" alt="Logo vikaplant" /> vikaplant
-        </a>
-      </div>
-
-      <!-- Collect the nav links, forms, and other content for toggling -->
-      <div class="collapse navbar-collapse" id="vika-navbar-collapse-1">
-        <ul class="nav navbar-nav">
-          <li>
-            <a href="#vika-o-nas-link">
-              O nas
-            </a>
-          </li>
-          <li>
-            <a href="#vika-galeria-link">
-              Galeria
-            </a>
-          </li>
-          <li>
-            <a href="#vika-kontakt-link">
-              Kontakt
-            </a>
-          </li>
-        </ul>
-      </div>
-      <!-- /.navbar-collapse -->
-    </div>
-    <!-- /.container -->
-  </nav>
-  <!-- END NAWIGACJA -->
-
-  <!-- KARUZELA -->
-  <div id="slider">
-    <div class="item active">
-      <img src="img/gallery_01.jpg" alt="" />
-    </div>
-    <div class="item">
-      <img src="img/gallery_02.jpg" alt="" />
-    </div>
-    <div class="item">
-      <img src="img/gallery_03.jpg" alt="" />
-    </div>
-  </div>
-  <!-- END KARUZELA -->
-
-  <!-- O NAS -->
-  <div id="vika-o-nas-link" class="jumbotron jumbotron-sm">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-12 col-lg-12">
-          <h1 class="h1 wow fadeInLeft">
-            O nas
-          </h1>
+    <!-- NAWIGACJA -->
+    <nav id="vika-nawigacja" class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button
+            type="button"
+            class="navbar-toggle collapsed"
+            data-toggle="collapse"
+            data-target="#vika-navbar-collapse-1"
+          >
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a id="vika-logo" class="navbar-brand" href="#vika-carousel">
+            <img src="img/logo.png" alt="Logo vikaplant" /> vikaplant
+          </a>
         </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="vika-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li>
+              <a href="#vika-o-nas-link"> O nas </a>
+            </li>
+            <li>
+              <a href="#vika-galeria-link"> Galeria </a>
+            </li>
+            <li>
+              <a href="#vika-kontakt-link"> Kontakt </a>
+            </li>
+          </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+      </div>
+      <!-- /.container -->
+    </nav>
+    <!-- END NAWIGACJA -->
+
+    <!-- KARUZELA -->
+    <div id="slider">
+      <div class="item active">
+        <img src="img/gallery_01.jpg" alt="" />
+      </div>
+      <div class="item">
+        <img src="img/gallery_02.jpg" alt="" />
+      </div>
+      <div class="item">
+        <img src="img/gallery_03.jpg" alt="" />
       </div>
     </div>
-  </div>
+    <!-- END KARUZELA -->
 
-  <div id="vika-o-nas">
-    <div class="container">
-      <p class="lead">
-        Szkółka bylin, rabaty bylinowe, wodospady, strumyki, kaskady, oczka
-        wodne. Projektowanie i realizacja.
-        <br />
-        Świeże warzywa i owoce.
-        <br /><br />
-        <strong>Hurt</strong><br />
-        Od poniedziałku do piątku 8:00 - 18:00<br /><br />
-        <strong>Detal</strong><br />
-        Soboty 8:00 - 18:00
-      </p>
-    </div>
-  </div>
-  <!-- END O NAS -->
-
-  <!-- GALERIA -->
-  <div id="vika-galeria-link" class="jumbotron jumbotron-sm">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-12 col-lg-12">
-          <h1 class="h1 wow fadeInLeft">
-            Galeria
-          </h1>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div id="vika-galeria">
-    <div class="container">
-      <div class="row">
-        <div class="col-xs-4 col-md-3 col-lg-2 portfolio-item wow fadeIn">
-          <a class="fancybox" href="img/galeria/_MG_6684.jpg" rel="galeria">
-            <div class="shadow wow fadeIn">
-              <img class="img-thumbnail" src="img/galeria/miniaturki/_MG_6684.jpg" alt="Zdjęcie" />
-            </div>
-          </a>
-        </div>
-        <div class="col-xs-4 col-md-3 col-lg-2 portfolio-item wow fadeIn">
-          <a class="fancybox" href="img/galeria/_MG_6685.jpg" rel="galeria">
-            <div class="shadow wow fadeIn">
-              <img class="img-thumbnail" src="img/galeria/miniaturki/_MG_6685.jpg" alt="Zdjęcie" />
-            </div>
-          </a>
-        </div>
-        <div class="col-xs-4 col-md-3 col-lg-2 portfolio-item wow fadeIn">
-          <a class="fancybox" href="img/galeria/_MG_6686.jpg" rel="galeria">
-            <div class="shadow wow fadeIn">
-              <img class="img-thumbnail" src="img/galeria/miniaturki/_MG_6686.jpg" alt="Zdjęcie" />
-            </div>
-          </a>
-        </div>
-        <div class="col-xs-4 col-md-3 col-lg-2 portfolio-item wow fadeIn">
-          <a class="fancybox" href="img/galeria/_MG_6687.jpg" rel="galeria">
-            <div class="shadow wow fadeIn">
-              <img class="img-thumbnail" src="img/galeria/miniaturki/_MG_6687.jpg" alt="Zdjęcie" />
-            </div>
-          </a>
-        </div>
-        <div class="col-xs-4 col-md-3 col-lg-2 portfolio-item wow fadeIn">
-          <a class="fancybox" href="img/galeria/_MG_6688.jpg" rel="galeria">
-            <div class="shadow wow fadeIn">
-              <img class="img-thumbnail" src="img/galeria/miniaturki/_MG_6688.jpg" alt="Zdjęcie" />
-            </div>
-          </a>
-        </div>
-        <div class="col-xs-4 col-md-3 col-lg-2 portfolio-item wow fadeIn">
-          <a class="fancybox" href="img/galeria/_MG_6689.jpg" rel="galeria">
-            <div class="shadow wow fadeIn">
-              <img class="img-thumbnail" src="img/galeria/miniaturki/_MG_6689.jpg" alt="Zdjęcie" />
-            </div>
-          </a>
-        </div>
-        <div class="col-xs-4 col-md-3 col-lg-2 portfolio-item wow fadeIn">
-          <a class="fancybox" href="img/galeria/_MG_6695.jpg" rel="galeria">
-            <div class="shadow wow fadeIn">
-              <img class="img-thumbnail" src="img/galeria/miniaturki/_MG_6695.jpg" alt="Zdjęcie" />
-            </div>
-          </a>
-        </div>
-        <div class="col-xs-4 col-md-3 col-lg-2 portfolio-item wow fadeIn">
-          <a class="fancybox" href="img/galeria/_MG_6697.jpg" rel="galeria">
-            <div class="shadow wow fadeIn">
-              <img class="img-thumbnail" src="img/galeria/miniaturki/_MG_6697.jpg" alt="Zdjęcie" />
-            </div>
-          </a>
-        </div>
-        <div class="col-xs-4 col-md-3 col-lg-2 portfolio-item wow fadeIn">
-          <a class="fancybox" href="img/galeria/_MG_6699.jpg" rel="galeria">
-            <div class="shadow wow fadeIn">
-              <img class="img-thumbnail" src="img/galeria/miniaturki/_MG_6699.jpg" alt="Zdjęcie" />
-            </div>
-          </a>
-        </div>
-        <div class="col-xs-4 col-md-3 col-lg-2 portfolio-item wow fadeIn">
-          <a class="fancybox" href="img/galeria/_MG_6700.jpg" rel="galeria">
-            <div class="shadow wow fadeIn">
-              <img class="img-thumbnail" src="img/galeria/miniaturki/_MG_6700.jpg" alt="Zdjęcie" />
-            </div>
-          </a>
-        </div>
-        <div class="col-xs-4 col-md-3 col-lg-2 portfolio-item wow fadeIn">
-          <a class="fancybox" href="img/galeria/_MG_6701.jpg" rel="galeria">
-            <div class="shadow wow fadeIn">
-              <img class="img-thumbnail" src="img/galeria/miniaturki/_MG_6701.jpg" alt="Zdjęcie" />
-            </div>
-          </a>
-        </div>
-        <div class="col-xs-4 col-md-3 col-lg-2 portfolio-item wow fadeIn">
-          <a class="fancybox" href="img/galeria/_MG_6702.jpg" rel="galeria">
-            <div class="shadow wow fadeIn">
-              <img class="img-thumbnail" src="img/galeria/miniaturki/_MG_6702.jpg" alt="Zdjęcie" />
-            </div>
-          </a>
-        </div>
-        <div class="col-xs-4 col-md-3 col-lg-2 portfolio-item wow fadeIn">
-          <a class="fancybox" href="img/galeria/_MG_6703.jpg" rel="galeria">
-            <div class="shadow wow fadeIn">
-              <img class="img-thumbnail" src="img/galeria/miniaturki/_MG_6703.jpg" alt="Zdjęcie" />
-            </div>
-          </a>
-        </div>
-        <div class="col-xs-4 col-md-3 col-lg-2 portfolio-item wow fadeIn">
-          <a class="fancybox" href="img/galeria/_MG_6704.jpg" rel="galeria">
-            <div class="shadow wow fadeIn">
-              <img class="img-thumbnail" src="img/galeria/miniaturki/_MG_6704.jpg" alt="Zdjęcie" />
-            </div>
-          </a>
-        </div>
-        <div class="col-xs-4 col-md-3 col-lg-2 portfolio-item wow fadeIn">
-          <a class="fancybox" href="img/galeria/_MG_6705.jpg" rel="galeria">
-            <div class="shadow wow fadeIn">
-              <img class="img-thumbnail" src="img/galeria/miniaturki/_MG_6705.jpg" alt="Zdjęcie" />
-            </div>
-          </a>
-        </div>
-        <div class="col-xs-4 col-md-3 col-lg-2 portfolio-item wow fadeIn">
-          <a class="fancybox" href="img/galeria/_MG_6707.jpg" rel="galeria">
-            <div class="shadow wow fadeIn">
-              <img class="img-thumbnail" src="img/galeria/miniaturki/_MG_6707.jpg" alt="Zdjęcie" />
-            </div>
-          </a>
-        </div>
-        <div class="col-xs-4 col-md-3 col-lg-2 portfolio-item wow fadeIn">
-          <a class="fancybox" href="img/galeria/_MG_6708.jpg" rel="galeria">
-            <div class="shadow wow fadeIn">
-              <img class="img-thumbnail" src="img/galeria/miniaturki/_MG_6708.jpg" alt="Zdjęcie" />
-            </div>
-          </a>
-        </div>
-        <div class="col-xs-4 col-md-3 col-lg-2 portfolio-item wow fadeIn">
-          <a class="fancybox" href="img/galeria/_MG_6709.jpg" rel="galeria">
-            <div class="shadow wow fadeIn">
-              <img class="img-thumbnail" src="img/galeria/miniaturki/_MG_6709.jpg" alt="Zdjęcie" />
-            </div>
-          </a>
-        </div>
-        <div class="col-xs-4 col-md-3 col-lg-2 portfolio-item wow fadeIn">
-          <a class="fancybox" href="img/galeria/_MG_6710.jpg" rel="galeria">
-            <div class="shadow wow fadeIn">
-              <img class="img-thumbnail" src="img/galeria/miniaturki/_MG_6710.jpg" alt="Zdjęcie" />
-            </div>
-          </a>
-        </div>
-        <div class="col-xs-4 col-md-3 col-lg-2 portfolio-item wow fadeIn">
-          <a class="fancybox" href="img/galeria/_MG_6711.jpg" rel="galeria">
-            <div class="shadow wow fadeIn">
-              <img class="img-thumbnail" src="img/galeria/miniaturki/_MG_6711.jpg" alt="Zdjęcie" />
-            </div>
-          </a>
-        </div>
-        <div class="col-xs-4 col-md-3 col-lg-2 portfolio-item wow fadeIn">
-          <a class="fancybox" href="img/galeria/_MG_6712.jpg" rel="galeria">
-            <div class="shadow wow fadeIn">
-              <img class="img-thumbnail" src="img/galeria/miniaturki/_MG_6712.jpg" alt="Zdjęcie" />
-            </div>
-          </a>
-        </div>
-        <div class="col-xs-4 col-md-3 col-lg-2 portfolio-item wow fadeIn">
-          <a class="fancybox" href="img/galeria/_MG_6713.jpg" rel="galeria">
-            <div class="shadow wow fadeIn">
-              <img class="img-thumbnail" src="img/galeria/miniaturki/_MG_6713.jpg" alt="Zdjęcie" />
-            </div>
-          </a>
-        </div>
-        <div class="col-xs-4 col-md-3 col-lg-2 portfolio-item wow fadeIn">
-          <a class="fancybox" href="img/galeria/_MG_6714.jpg" rel="galeria">
-            <div class="shadow wow fadeIn">
-              <img class="img-thumbnail" src="img/galeria/miniaturki/_MG_6714.jpg" alt="Zdjęcie" />
-            </div>
-          </a>
-        </div>
-        <div class="col-xs-4 col-md-3 col-lg-2 portfolio-item wow fadeIn">
-          <a class="fancybox" href="img/galeria/_MG_6715.jpg" rel="galeria">
-            <div class="shadow wow fadeIn">
-              <img class="img-thumbnail" src="img/galeria/miniaturki/_MG_6715.jpg" alt="Zdjęcie" />
-            </div>
-          </a>
-        </div>
-        <div class="col-xs-4 col-md-3 col-lg-2 portfolio-item wow fadeIn">
-          <a class="fancybox" href="img/galeria/_MG_6716.jpg" rel="galeria">
-            <div class="shadow wow fadeIn">
-              <img class="img-thumbnail" src="img/galeria/miniaturki/_MG_6716.jpg" alt="Zdjęcie" />
-            </div>
-          </a>
-        </div>
-        <div class="col-xs-4 col-md-3 col-lg-2 portfolio-item wow fadeIn">
-          <a class="fancybox" href="img/galeria/_MG_6717.jpg" rel="galeria">
-            <div class="shadow wow fadeIn">
-              <img class="img-thumbnail" src="img/galeria/miniaturki/_MG_6717.jpg" alt="Zdjęcie" />
-            </div>
-          </a>
-        </div>
-        <div class="col-xs-4 col-md-3 col-lg-2 portfolio-item wow fadeIn">
-          <a class="fancybox" href="img/galeria/_MG_6718.jpg" rel="galeria">
-            <div class="shadow wow fadeIn">
-              <img class="img-thumbnail" src="img/galeria/miniaturki/_MG_6718.jpg" alt="Zdjęcie" />
-            </div>
-          </a>
-        </div>
-        <div class="col-xs-4 col-md-3 col-lg-2 portfolio-item wow fadeIn">
-          <a class="fancybox" href="img/galeria/P1000003.jpg" rel="galeria">
-            <div class="shadow wow fadeIn">
-              <img class="img-thumbnail" src="img/galeria/miniaturki/P1000003.jpg" alt="Zdjęcie" />
-            </div>
-          </a>
-        </div>
-        <div class="col-xs-4 col-md-3 col-lg-2 portfolio-item wow fadeIn">
-          <a class="fancybox" href="img/galeria/P1000004.jpg" rel="galeria">
-            <div class="shadow wow fadeIn">
-              <img class="img-thumbnail" src="img/galeria/miniaturki/P1000004.jpg" alt="Zdjęcie" />
-            </div>
-          </a>
-        </div>
-        <div class="col-xs-4 col-md-3 col-lg-2 portfolio-item wow fadeIn">
-          <a class="fancybox" href="img/galeria/P1000007.jpg" rel="galeria">
-            <div class="shadow wow fadeIn">
-              <img class="img-thumbnail" src="img/galeria/miniaturki/P1000007.jpg" alt="Zdjęcie" />
-            </div>
-          </a>
-        </div>
-        <div class="col-xs-4 col-md-3 col-lg-2 portfolio-item wow fadeIn">
-          <a class="fancybox" href="img/galeria/P1000009.jpg" rel="galeria">
-            <div class="shadow wow fadeIn">
-              <img class="img-thumbnail" src="img/galeria/miniaturki/P1000009.jpg" alt="Zdjęcie" />
-            </div>
-          </a>
-        </div>
-        <div class="col-xs-4 col-md-3 col-lg-2 portfolio-item wow fadeIn">
-          <a class="fancybox" href="img/galeria/P1000015.jpg" rel="galeria">
-            <div class="shadow wow fadeIn">
-              <img class="img-thumbnail" src="img/galeria/miniaturki/P1000015.jpg" alt="Zdjęcie" />
-            </div>
-          </a>
-        </div>
-        <div class="col-xs-4 col-md-3 col-lg-2 portfolio-item wow fadeIn">
-          <a class="fancybox" href="img/galeria/P1000020.jpg" rel="galeria">
-            <div class="shadow wow fadeIn">
-              <img class="img-thumbnail" src="img/galeria/miniaturki/P1000020.jpg" alt="Zdjęcie" />
-            </div>
-          </a>
-        </div>
-        <div class="col-xs-4 col-md-3 col-lg-2 portfolio-item wow fadeIn">
-          <a class="fancybox" href="img/galeria/P1000047.jpg" rel="galeria">
-            <div class="shadow wow fadeIn">
-              <img class="img-thumbnail" src="img/galeria/miniaturki/P1000047.jpg" alt="Zdjęcie" />
-            </div>
-          </a>
-        </div>
-        <div class="col-xs-4 col-md-3 col-lg-2 portfolio-item wow fadeIn">
-          <a class="fancybox" href="img/galeria/P1000049.jpg" rel="galeria">
-            <div class="shadow wow fadeIn">
-              <img class="img-thumbnail" src="img/galeria/miniaturki/P1000049.jpg" alt="Zdjęcie" />
-            </div>
-          </a>
-        </div>
-        <div class="col-xs-4 col-md-3 col-lg-2 portfolio-item wow fadeIn">
-          <a class="fancybox" href="img/galeria/P1000063.jpg" rel="galeria">
-            <div class="shadow wow fadeIn">
-              <img class="img-thumbnail" src="img/galeria/miniaturki/P1000063.jpg" alt="Zdjęcie" />
-            </div>
-          </a>
-        </div>
-        <div class="col-xs-4 col-md-3 col-lg-2 portfolio-item wow fadeIn">
-          <a class="fancybox" href="img/galeria/P1000068.jpg" rel="galeria">
-            <div class="shadow wow fadeIn">
-              <img class="img-thumbnail" src="img/galeria/miniaturki/P1000068.jpg" alt="Zdjęcie" />
-            </div>
-          </a>
-        </div>
-        <div class="col-xs-4 col-md-3 col-lg-2 portfolio-item wow fadeIn">
-          <a class="fancybox" href="img/galeria/P1000069.jpg" rel="galeria">
-            <div class="shadow wow fadeIn">
-              <img class="img-thumbnail" src="img/galeria/miniaturki/P1000069.jpg" alt="Zdjęcie" />
-            </div>
-          </a>
-        </div>
-        <div class="col-xs-4 col-md-3 col-lg-2 portfolio-item wow fadeIn">
-          <a class="fancybox" href="img/galeria/P1000086.jpg" rel="galeria">
-            <div class="shadow wow fadeIn">
-              <img class="img-thumbnail" src="img/galeria/miniaturki/P1000086.jpg" alt="Zdjęcie" />
-            </div>
-          </a>
-        </div>
-        <div class="col-xs-4 col-md-3 col-lg-2 portfolio-item wow fadeIn">
-          <a class="fancybox" href="img/galeria/P1000090.jpg" rel="galeria">
-            <div class="shadow wow fadeIn">
-              <img class="img-thumbnail" src="img/galeria/miniaturki/P1000090.jpg" alt="Zdjęcie" />
-            </div>
-          </a>
-        </div>
-        <div class="col-xs-4 col-md-3 col-lg-2 portfolio-item wow fadeIn">
-          <a class="fancybox" href="img/galeria/P1000099.jpg" rel="galeria">
-            <div class="shadow wow fadeIn">
-              <img class="img-thumbnail" src="img/galeria/miniaturki/P1000099.jpg" alt="Zdjęcie" />
-            </div>
-          </a>
-        </div>
-        <div class="col-xs-4 col-md-3 col-lg-2 portfolio-item wow fadeIn">
-          <a class="fancybox" href="img/galeria/P1000123.jpg" rel="galeria">
-            <div class="shadow wow fadeIn">
-              <img class="img-thumbnail" src="img/galeria/miniaturki/P1000123.jpg" alt="Zdjęcie" />
-            </div>
-          </a>
-        </div>
-        <div class="col-xs-4 col-md-3 col-lg-2 portfolio-item wow fadeIn">
-          <a class="fancybox" href="img/galeria/P1000128.jpg" rel="galeria">
-            <div class="shadow wow fadeIn">
-              <img class="img-thumbnail" src="img/galeria/miniaturki/P1000128.jpg" alt="Zdjęcie" />
-            </div>
-          </a>
-        </div>
-        <div class="col-xs-4 col-md-3 col-lg-2 portfolio-item wow fadeIn">
-          <a class="fancybox" href="img/galeria/P1000130.jpg" rel="galeria">
-            <div class="shadow wow fadeIn">
-              <img class="img-thumbnail" src="img/galeria/miniaturki/P1000130.jpg" alt="Zdjęcie" />
-            </div>
-          </a>
-        </div>
-        <div class="col-xs-4 col-md-3 col-lg-2 portfolio-item wow fadeIn">
-          <a class="fancybox" href="img/galeria/P1000134.jpg" rel="galeria">
-            <div class="shadow wow fadeIn">
-              <img class="img-thumbnail" src="img/galeria/miniaturki/P1000134.jpg" alt="Zdjęcie" />
-            </div>
-          </a>
-        </div>
-        <div class="col-xs-4 col-md-3 col-lg-2 portfolio-item wow fadeIn">
-          <a class="fancybox" href="img/galeria/P1000137.jpg" rel="galeria">
-            <div class="shadow wow fadeIn">
-              <img class="img-thumbnail" src="img/galeria/miniaturki/P1000137.jpg" alt="Zdjęcie" />
-            </div>
-          </a>
-        </div>
-        <div class="col-xs-4 col-md-3 col-lg-2 portfolio-item wow fadeIn">
-          <a class="fancybox" href="img/galeria/P1000138.jpg" rel="galeria">
-            <div class="shadow wow fadeIn">
-              <img class="img-thumbnail" src="img/galeria/miniaturki/P1000138.jpg" alt="Zdjęcie" />
-            </div>
-          </a>
-        </div>
-        <div class="col-xs-4 col-md-3 col-lg-2 portfolio-item wow fadeIn">
-          <a class="fancybox" href="img/galeria/P1000151.jpg" rel="galeria">
-            <div class="shadow wow fadeIn">
-              <img class="img-thumbnail" src="img/galeria/miniaturki/P1000151.jpg" alt="Zdjęcie" />
-            </div>
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- END GALERIA -->
-
-  <!-- KONTAKT -->
-  <div id="vika-kontakt-link" class="jumbotron jumbotron-sm">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-12 col-lg-12">
-          <h1 class="h1 wow fadeInLeft">
-            Kontakt
-          </h1>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div id="vika-kontakt">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <div class="row">
-            <div class="col-xs-12 col-md-4">
-              <strong>vikaplant</strong><br />
-              ul. Zachodnia 41<br />
-              05-092 Łomianki<br />
-              <span class="fa fa-facebook-square"></span>
-              <a href="https://facebook.com/Vikaplant" target="_blank">facebook.com/vikaplant</a>
-              <span class="glyphicon glyphicon-new-window"></span><br />
-              <div class="fb-like" data-href="https://facebook.com/vikaplant" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
-              <br /><br />
-            </div>
-            <div class="col-xs-12 col-md-4">
-              Maria Łuczkiewicz<br />
-              <span class="glyphicon glyphicon-phone"></span> 887 337 738<br />
-              <span class="glyphicon glyphicon-envelope"></span>
-              <a href="mailto:bylinymaria@gmail.com">bylinymaria@gmail.com</a><br /><br />
-            </div>
-            <div class="col-xs-12 col-md-4">
-              Jarosław Łuczkiewicz<br />
-              <span class="glyphicon glyphicon-phone"></span> 539 648 045<br />
-              <span class="glyphicon glyphicon-envelope"></span>
-              <a href="mailto:vikaplant@gmail.com">vikaplant@gmail.com</a><br /><br />
-            </div>
+    <!-- O NAS -->
+    <div id="vika-o-nas-link" class="jumbotron jumbotron-sm">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-lg-12">
+            <h1 class="h1 wow fadeInLeft">O nas</h1>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <!-- END KONTAKT  -->
 
-  <iframe width="100%" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=Zachodnia%2041%2005-092%20%C5%81omianki&t=&z=17&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+    <div id="vika-o-nas">
+      <div class="container">
+        <p class="lead">
+          Szkółka bylin, rabaty bylinowe, wodospady, strumyki, kaskady, oczka wodne. Projektowanie i realizacja.
+          <br />
+          Świeże warzywa i owoce.
+          <br />
+          <strong>Od poniedziałku do soboty 10:00 - 18:00</strong>
+        </p>
+      </div>
+    </div>
+    <!-- END O NAS -->
 
-  <!-- SKRYPTY -->
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-  <script>
-    window.jQuery ||
-      document.write(
-        '<script src="js/vendor/jquery-1.11.2.min.js"><\/script>'
-      );
-  </script>
-  <script src="js/vendor/bootstrap.min.js"></script>
-  <script src="fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
-  <script src="fancybox/source/jquery.fancybox.pack.js"></script>
-  <script src="js/vendor/wow.js"></script>
-  <script src="js/main.js"></script>
-</body>
+    <!-- KONTAKT -->
+    <div id="vika-kontakt-link" class="jumbotron jumbotron-sm">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-lg-12">
+            <h1 class="h1 wow fadeInLeft">Kontakt</h1>
+          </div>
+        </div>
+      </div>
+    </div>
 
+    <div id="vika-kontakt">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12">
+            <strong>vikaplant</strong><br />
+            Maria Łuczkiewicz<br />
+            ul. Zachodnia 41<br />
+            05-092 Łomianki<br />
+            <span class="glyphicon glyphicon-phone"></span> <a href="tel:887337738">887 337 738</a><br />
+            <span class="glyphicon glyphicon-envelope"></span>
+            <a href="mailto:bylinymaria@gmail.com">bylinymaria@gmail.com</a><br />
+            <span class="fa fa-facebook-square"></span>
+            <a href="https://facebook.com/Vikaplant" target="_blank">facebook.com/vikaplant</a>
+            <span class="glyphicon glyphicon-new-window"></span><br />
+            <div
+              class="fb-like"
+              data-href="https://facebook.com/vikaplant"
+              data-layout="button_count"
+              data-action="like"
+              data-show-faces="false"
+              data-share="false"
+            ></div>
+            <br />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END KONTAKT  -->
+
+    <iframe
+      width="100%"
+      height="500"
+      id="gmap_canvas"
+      src="https://maps.google.com/maps?q=Zachodnia%2041%2005-092%20%C5%81omianki&t=&z=17&ie=UTF8&iwloc=&output=embed"
+      frameborder="0"
+      scrolling="no"
+      marginheight="0"
+      marginwidth="0"
+    ></iframe>
+
+    <!-- GALERIA -->
+    <div id="vika-galeria-link" class="jumbotron jumbotron-sm">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-lg-12">
+            <h1 class="h1 wow fadeInLeft">Galeria</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="vika-galeria">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-4 col-md-3 col-lg-2 portfolio-item wow fadeIn">
+            <a class="fancybox" href="img/galeria/_MG_6684.jpg" rel="galeria">
+              <div class="shadow wow fadeIn">
+                <img class="img-thumbnail" src="img/galeria/miniaturki/_MG_6684.jpg" alt="Zdjęcie" />
+              </div>
+            </a>
+          </div>
+          <div class="col-xs-4 col-md-3 col-lg-2 portfolio-item wow fadeIn">
+            <a class="fancybox" href="img/galeria/_MG_6685.jpg" rel="galeria">
+              <div class="shadow wow fadeIn">
+                <img class="img-thumbnail" src="img/galeria/miniaturki/_MG_6685.jpg" alt="Zdjęcie" />
+              </div>
+            </a>
+          </div>
+          <div class="col-xs-4 col-md-3 col-lg-2 portfolio-item wow fadeIn">
+            <a class="fancybox" href="img/galeria/_MG_6686.jpg" rel="galeria">
+              <div class="shadow wow fadeIn">
+                <img class="img-thumbnail" src="img/galeria/miniaturki/_MG_6686.jpg" alt="Zdjęcie" />
+              </div>
+            </a>
+          </div>
+          <div class="col-xs-4 col-md-3 col-lg-2 portfolio-item wow fadeIn">
+            <a class="fancybox" href="img/galeria/_MG_6687.jpg" rel="galeria">
+              <div class="shadow wow fadeIn">
+                <img class="img-thumbnail" src="img/galeria/miniaturki/_MG_6687.jpg" alt="Zdjęcie" />
+              </div>
+            </a>
+          </div>
+          <div class="col-xs-4 col-md-3 col-lg-2 portfolio-item wow fadeIn">
+            <a class="fancybox" href="img/galeria/_MG_6688.jpg" rel="galeria">
+              <div class="shadow wow fadeIn">
+                <img class="img-thumbnail" src="img/galeria/miniaturki/_MG_6688.jpg" alt="Zdjęcie" />
+              </div>
+            </a>
+          </div>
+          <div class="col-xs-4 col-md-3 col-lg-2 portfolio-item wow fadeIn">
+            <a class="fancybox" href="img/galeria/_MG_6689.jpg" rel="galeria">
+              <div class="shadow wow fadeIn">
+                <img class="img-thumbnail" src="img/galeria/miniaturki/_MG_6689.jpg" alt="Zdjęcie" />
+              </div>
+            </a>
+          </div>
+          <div class="col-xs-4 col-md-3 col-lg-2 portfolio-item wow fadeIn">
+            <a class="fancybox" href="img/galeria/_MG_6695.jpg" rel="galeria">
+              <div class="shadow wow fadeIn">
+                <img class="img-thumbnail" src="img/galeria/miniaturki/_MG_6695.jpg" alt="Zdjęcie" />
+              </div>
+            </a>
+          </div>
+          <div class="col-xs-4 col-md-3 col-lg-2 portfolio-item wow fadeIn">
+            <a class="fancybox" href="img/galeria/_MG_6697.jpg" rel="galeria">
+              <div class="shadow wow fadeIn">
+                <img class="img-thumbnail" src="img/galeria/miniaturki/_MG_6697.jpg" alt="Zdjęcie" />
+              </div>
+            </a>
+          </div>
+          <div class="col-xs-4 col-md-3 col-lg-2 portfolio-item wow fadeIn">
+            <a class="fancybox" href="img/galeria/_MG_6699.jpg" rel="galeria">
+              <div class="shadow wow fadeIn">
+                <img class="img-thumbnail" src="img/galeria/miniaturki/_MG_6699.jpg" alt="Zdjęcie" />
+              </div>
+            </a>
+          </div>
+          <div class="col-xs-4 col-md-3 col-lg-2 portfolio-item wow fadeIn">
+            <a class="fancybox" href="img/galeria/_MG_6700.jpg" rel="galeria">
+              <div class="shadow wow fadeIn">
+                <img class="img-thumbnail" src="img/galeria/miniaturki/_MG_6700.jpg" alt="Zdjęcie" />
+              </div>
+            </a>
+          </div>
+          <div class="col-xs-4 col-md-3 col-lg-2 portfolio-item wow fadeIn">
+            <a class="fancybox" href="img/galeria/_MG_6701.jpg" rel="galeria">
+              <div class="shadow wow fadeIn">
+                <img class="img-thumbnail" src="img/galeria/miniaturki/_MG_6701.jpg" alt="Zdjęcie" />
+              </div>
+            </a>
+          </div>
+          <div class="col-xs-4 col-md-3 col-lg-2 portfolio-item wow fadeIn">
+            <a class="fancybox" href="img/galeria/_MG_6702.jpg" rel="galeria">
+              <div class="shadow wow fadeIn">
+                <img class="img-thumbnail" src="img/galeria/miniaturki/_MG_6702.jpg" alt="Zdjęcie" />
+              </div>
+            </a>
+          </div>
+          <div class="col-xs-4 col-md-3 col-lg-2 portfolio-item wow fadeIn">
+            <a class="fancybox" href="img/galeria/_MG_6703.jpg" rel="galeria">
+              <div class="shadow wow fadeIn">
+                <img class="img-thumbnail" src="img/galeria/miniaturki/_MG_6703.jpg" alt="Zdjęcie" />
+              </div>
+            </a>
+          </div>
+          <div class="col-xs-4 col-md-3 col-lg-2 portfolio-item wow fadeIn">
+            <a class="fancybox" href="img/galeria/_MG_6704.jpg" rel="galeria">
+              <div class="shadow wow fadeIn">
+                <img class="img-thumbnail" src="img/galeria/miniaturki/_MG_6704.jpg" alt="Zdjęcie" />
+              </div>
+            </a>
+          </div>
+          <div class="col-xs-4 col-md-3 col-lg-2 portfolio-item wow fadeIn">
+            <a class="fancybox" href="img/galeria/_MG_6705.jpg" rel="galeria">
+              <div class="shadow wow fadeIn">
+                <img class="img-thumbnail" src="img/galeria/miniaturki/_MG_6705.jpg" alt="Zdjęcie" />
+              </div>
+            </a>
+          </div>
+          <div class="col-xs-4 col-md-3 col-lg-2 portfolio-item wow fadeIn">
+            <a class="fancybox" href="img/galeria/_MG_6707.jpg" rel="galeria">
+              <div class="shadow wow fadeIn">
+                <img class="img-thumbnail" src="img/galeria/miniaturki/_MG_6707.jpg" alt="Zdjęcie" />
+              </div>
+            </a>
+          </div>
+          <div class="col-xs-4 col-md-3 col-lg-2 portfolio-item wow fadeIn">
+            <a class="fancybox" href="img/galeria/_MG_6708.jpg" rel="galeria">
+              <div class="shadow wow fadeIn">
+                <img class="img-thumbnail" src="img/galeria/miniaturki/_MG_6708.jpg" alt="Zdjęcie" />
+              </div>
+            </a>
+          </div>
+          <div class="col-xs-4 col-md-3 col-lg-2 portfolio-item wow fadeIn">
+            <a class="fancybox" href="img/galeria/_MG_6709.jpg" rel="galeria">
+              <div class="shadow wow fadeIn">
+                <img class="img-thumbnail" src="img/galeria/miniaturki/_MG_6709.jpg" alt="Zdjęcie" />
+              </div>
+            </a>
+          </div>
+          <div class="col-xs-4 col-md-3 col-lg-2 portfolio-item wow fadeIn">
+            <a class="fancybox" href="img/galeria/_MG_6710.jpg" rel="galeria">
+              <div class="shadow wow fadeIn">
+                <img class="img-thumbnail" src="img/galeria/miniaturki/_MG_6710.jpg" alt="Zdjęcie" />
+              </div>
+            </a>
+          </div>
+          <div class="col-xs-4 col-md-3 col-lg-2 portfolio-item wow fadeIn">
+            <a class="fancybox" href="img/galeria/_MG_6711.jpg" rel="galeria">
+              <div class="shadow wow fadeIn">
+                <img class="img-thumbnail" src="img/galeria/miniaturki/_MG_6711.jpg" alt="Zdjęcie" />
+              </div>
+            </a>
+          </div>
+          <div class="col-xs-4 col-md-3 col-lg-2 portfolio-item wow fadeIn">
+            <a class="fancybox" href="img/galeria/_MG_6712.jpg" rel="galeria">
+              <div class="shadow wow fadeIn">
+                <img class="img-thumbnail" src="img/galeria/miniaturki/_MG_6712.jpg" alt="Zdjęcie" />
+              </div>
+            </a>
+          </div>
+          <div class="col-xs-4 col-md-3 col-lg-2 portfolio-item wow fadeIn">
+            <a class="fancybox" href="img/galeria/_MG_6713.jpg" rel="galeria">
+              <div class="shadow wow fadeIn">
+                <img class="img-thumbnail" src="img/galeria/miniaturki/_MG_6713.jpg" alt="Zdjęcie" />
+              </div>
+            </a>
+          </div>
+          <div class="col-xs-4 col-md-3 col-lg-2 portfolio-item wow fadeIn">
+            <a class="fancybox" href="img/galeria/_MG_6714.jpg" rel="galeria">
+              <div class="shadow wow fadeIn">
+                <img class="img-thumbnail" src="img/galeria/miniaturki/_MG_6714.jpg" alt="Zdjęcie" />
+              </div>
+            </a>
+          </div>
+          <div class="col-xs-4 col-md-3 col-lg-2 portfolio-item wow fadeIn">
+            <a class="fancybox" href="img/galeria/_MG_6715.jpg" rel="galeria">
+              <div class="shadow wow fadeIn">
+                <img class="img-thumbnail" src="img/galeria/miniaturki/_MG_6715.jpg" alt="Zdjęcie" />
+              </div>
+            </a>
+          </div>
+          <div class="col-xs-4 col-md-3 col-lg-2 portfolio-item wow fadeIn">
+            <a class="fancybox" href="img/galeria/_MG_6716.jpg" rel="galeria">
+              <div class="shadow wow fadeIn">
+                <img class="img-thumbnail" src="img/galeria/miniaturki/_MG_6716.jpg" alt="Zdjęcie" />
+              </div>
+            </a>
+          </div>
+          <div class="col-xs-4 col-md-3 col-lg-2 portfolio-item wow fadeIn">
+            <a class="fancybox" href="img/galeria/_MG_6717.jpg" rel="galeria">
+              <div class="shadow wow fadeIn">
+                <img class="img-thumbnail" src="img/galeria/miniaturki/_MG_6717.jpg" alt="Zdjęcie" />
+              </div>
+            </a>
+          </div>
+          <div class="col-xs-4 col-md-3 col-lg-2 portfolio-item wow fadeIn">
+            <a class="fancybox" href="img/galeria/_MG_6718.jpg" rel="galeria">
+              <div class="shadow wow fadeIn">
+                <img class="img-thumbnail" src="img/galeria/miniaturki/_MG_6718.jpg" alt="Zdjęcie" />
+              </div>
+            </a>
+          </div>
+          <div class="col-xs-4 col-md-3 col-lg-2 portfolio-item wow fadeIn">
+            <a class="fancybox" href="img/galeria/P1000003.jpg" rel="galeria">
+              <div class="shadow wow fadeIn">
+                <img class="img-thumbnail" src="img/galeria/miniaturki/P1000003.jpg" alt="Zdjęcie" />
+              </div>
+            </a>
+          </div>
+          <div class="col-xs-4 col-md-3 col-lg-2 portfolio-item wow fadeIn">
+            <a class="fancybox" href="img/galeria/P1000004.jpg" rel="galeria">
+              <div class="shadow wow fadeIn">
+                <img class="img-thumbnail" src="img/galeria/miniaturki/P1000004.jpg" alt="Zdjęcie" />
+              </div>
+            </a>
+          </div>
+          <div class="col-xs-4 col-md-3 col-lg-2 portfolio-item wow fadeIn">
+            <a class="fancybox" href="img/galeria/P1000007.jpg" rel="galeria">
+              <div class="shadow wow fadeIn">
+                <img class="img-thumbnail" src="img/galeria/miniaturki/P1000007.jpg" alt="Zdjęcie" />
+              </div>
+            </a>
+          </div>
+          <div class="col-xs-4 col-md-3 col-lg-2 portfolio-item wow fadeIn">
+            <a class="fancybox" href="img/galeria/P1000009.jpg" rel="galeria">
+              <div class="shadow wow fadeIn">
+                <img class="img-thumbnail" src="img/galeria/miniaturki/P1000009.jpg" alt="Zdjęcie" />
+              </div>
+            </a>
+          </div>
+          <div class="col-xs-4 col-md-3 col-lg-2 portfolio-item wow fadeIn">
+            <a class="fancybox" href="img/galeria/P1000015.jpg" rel="galeria">
+              <div class="shadow wow fadeIn">
+                <img class="img-thumbnail" src="img/galeria/miniaturki/P1000015.jpg" alt="Zdjęcie" />
+              </div>
+            </a>
+          </div>
+          <div class="col-xs-4 col-md-3 col-lg-2 portfolio-item wow fadeIn">
+            <a class="fancybox" href="img/galeria/P1000020.jpg" rel="galeria">
+              <div class="shadow wow fadeIn">
+                <img class="img-thumbnail" src="img/galeria/miniaturki/P1000020.jpg" alt="Zdjęcie" />
+              </div>
+            </a>
+          </div>
+          <div class="col-xs-4 col-md-3 col-lg-2 portfolio-item wow fadeIn">
+            <a class="fancybox" href="img/galeria/P1000047.jpg" rel="galeria">
+              <div class="shadow wow fadeIn">
+                <img class="img-thumbnail" src="img/galeria/miniaturki/P1000047.jpg" alt="Zdjęcie" />
+              </div>
+            </a>
+          </div>
+          <div class="col-xs-4 col-md-3 col-lg-2 portfolio-item wow fadeIn">
+            <a class="fancybox" href="img/galeria/P1000049.jpg" rel="galeria">
+              <div class="shadow wow fadeIn">
+                <img class="img-thumbnail" src="img/galeria/miniaturki/P1000049.jpg" alt="Zdjęcie" />
+              </div>
+            </a>
+          </div>
+          <div class="col-xs-4 col-md-3 col-lg-2 portfolio-item wow fadeIn">
+            <a class="fancybox" href="img/galeria/P1000063.jpg" rel="galeria">
+              <div class="shadow wow fadeIn">
+                <img class="img-thumbnail" src="img/galeria/miniaturki/P1000063.jpg" alt="Zdjęcie" />
+              </div>
+            </a>
+          </div>
+          <div class="col-xs-4 col-md-3 col-lg-2 portfolio-item wow fadeIn">
+            <a class="fancybox" href="img/galeria/P1000068.jpg" rel="galeria">
+              <div class="shadow wow fadeIn">
+                <img class="img-thumbnail" src="img/galeria/miniaturki/P1000068.jpg" alt="Zdjęcie" />
+              </div>
+            </a>
+          </div>
+          <div class="col-xs-4 col-md-3 col-lg-2 portfolio-item wow fadeIn">
+            <a class="fancybox" href="img/galeria/P1000069.jpg" rel="galeria">
+              <div class="shadow wow fadeIn">
+                <img class="img-thumbnail" src="img/galeria/miniaturki/P1000069.jpg" alt="Zdjęcie" />
+              </div>
+            </a>
+          </div>
+          <div class="col-xs-4 col-md-3 col-lg-2 portfolio-item wow fadeIn">
+            <a class="fancybox" href="img/galeria/P1000086.jpg" rel="galeria">
+              <div class="shadow wow fadeIn">
+                <img class="img-thumbnail" src="img/galeria/miniaturki/P1000086.jpg" alt="Zdjęcie" />
+              </div>
+            </a>
+          </div>
+          <div class="col-xs-4 col-md-3 col-lg-2 portfolio-item wow fadeIn">
+            <a class="fancybox" href="img/galeria/P1000090.jpg" rel="galeria">
+              <div class="shadow wow fadeIn">
+                <img class="img-thumbnail" src="img/galeria/miniaturki/P1000090.jpg" alt="Zdjęcie" />
+              </div>
+            </a>
+          </div>
+          <div class="col-xs-4 col-md-3 col-lg-2 portfolio-item wow fadeIn">
+            <a class="fancybox" href="img/galeria/P1000099.jpg" rel="galeria">
+              <div class="shadow wow fadeIn">
+                <img class="img-thumbnail" src="img/galeria/miniaturki/P1000099.jpg" alt="Zdjęcie" />
+              </div>
+            </a>
+          </div>
+          <div class="col-xs-4 col-md-3 col-lg-2 portfolio-item wow fadeIn">
+            <a class="fancybox" href="img/galeria/P1000123.jpg" rel="galeria">
+              <div class="shadow wow fadeIn">
+                <img class="img-thumbnail" src="img/galeria/miniaturki/P1000123.jpg" alt="Zdjęcie" />
+              </div>
+            </a>
+          </div>
+          <div class="col-xs-4 col-md-3 col-lg-2 portfolio-item wow fadeIn">
+            <a class="fancybox" href="img/galeria/P1000128.jpg" rel="galeria">
+              <div class="shadow wow fadeIn">
+                <img class="img-thumbnail" src="img/galeria/miniaturki/P1000128.jpg" alt="Zdjęcie" />
+              </div>
+            </a>
+          </div>
+          <div class="col-xs-4 col-md-3 col-lg-2 portfolio-item wow fadeIn">
+            <a class="fancybox" href="img/galeria/P1000130.jpg" rel="galeria">
+              <div class="shadow wow fadeIn">
+                <img class="img-thumbnail" src="img/galeria/miniaturki/P1000130.jpg" alt="Zdjęcie" />
+              </div>
+            </a>
+          </div>
+          <div class="col-xs-4 col-md-3 col-lg-2 portfolio-item wow fadeIn">
+            <a class="fancybox" href="img/galeria/P1000134.jpg" rel="galeria">
+              <div class="shadow wow fadeIn">
+                <img class="img-thumbnail" src="img/galeria/miniaturki/P1000134.jpg" alt="Zdjęcie" />
+              </div>
+            </a>
+          </div>
+          <div class="col-xs-4 col-md-3 col-lg-2 portfolio-item wow fadeIn">
+            <a class="fancybox" href="img/galeria/P1000137.jpg" rel="galeria">
+              <div class="shadow wow fadeIn">
+                <img class="img-thumbnail" src="img/galeria/miniaturki/P1000137.jpg" alt="Zdjęcie" />
+              </div>
+            </a>
+          </div>
+          <div class="col-xs-4 col-md-3 col-lg-2 portfolio-item wow fadeIn">
+            <a class="fancybox" href="img/galeria/P1000138.jpg" rel="galeria">
+              <div class="shadow wow fadeIn">
+                <img class="img-thumbnail" src="img/galeria/miniaturki/P1000138.jpg" alt="Zdjęcie" />
+              </div>
+            </a>
+          </div>
+          <div class="col-xs-4 col-md-3 col-lg-2 portfolio-item wow fadeIn">
+            <a class="fancybox" href="img/galeria/P1000151.jpg" rel="galeria">
+              <div class="shadow wow fadeIn">
+                <img class="img-thumbnail" src="img/galeria/miniaturki/P1000151.jpg" alt="Zdjęcie" />
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END GALERIA -->
+
+    <!-- SKRYPTY -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>
+      window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>');
+    </script>
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <script src="fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+    <script src="fancybox/source/jquery.fancybox.pack.js"></script>
+    <script src="js/vendor/wow.js"></script>
+    <script src="js/main.js"></script>
+  </body>
 </html>
